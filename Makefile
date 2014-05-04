@@ -12,7 +12,8 @@ install:
 	cp -a consolefonts/* $(DESTDIR)$(DATADIR)/consolefonts
 	if [ ! -e $(DESTDIR)$(DATADIR)/fonts/misc ]; then mkdir -p $(DESTDIR)$(DATADIR)/fonts/misc; fi
 	cp -a x11-bitmap/* $(DESTDIR)$(DATADIR)/fonts/misc
+
+rehash_fonts:
 	mkfontdir $(DESTDIR)$(DATADIR)/fonts/misc
 	xset fp rehash
-
 

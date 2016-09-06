@@ -2,7 +2,7 @@
 LodeSans-15.pcf.gz: LodeSans-15.pcf
 	gzip -kf LodeSans-15.pcf
 
-LodeSans-15.pcf: 
+LodeSans-15.pcf: LodeSans-15.bdf
 	bdftopcf LodeSans-15.bdf > LodeSans-15.pcf
 
 LodeSans-15.bdf: LodeSans.sfd convert.py
